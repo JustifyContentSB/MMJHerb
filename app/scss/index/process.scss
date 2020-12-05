@@ -1,6 +1,88 @@
 .process {
 	margin-top: 80px;
 	&__descr {
-		
+		margin-top: 10px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 120%;
+	}
+	&__list {
+		margin-top: 42px;
+	}
+	&__item {
+		padding: 30px 25px;
+		margin-bottom: 30px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+		border-radius: 12px;
+		&-header {
+			padding-left: 89px;
+			min-height: 60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 64px;
+				height: 64px;
+				left: 0;
+				top: 0;
+			}
+			&--pc::before {
+				background: url('../../images/process/pc.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&--mail::before {
+				background: url('../../images/process/mail.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&--marijuana::before {
+				background: url('../../images/process/marijuana.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&--pc {
+				.process__item-step {
+					margin-top: 15px;
+				}
+				.process__item-title {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		&-step {
+			display: inline-block;
+			color: #AEC4B1;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 100%;
+		}
+		&-title {
+			color: $orangeColor;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 120%;
+		}
+		&-info {
+			margin-top: 28px;
+			p + p {
+				margin-top: 13px;
+			}
+		}
+		&-link {
+			margin-top: 25px;
+			text-align: center;
+			a {
+				@extend %orangeBtn;
+				padding: 18px 21px;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 100%;
+			}
+		}
 	}
 }

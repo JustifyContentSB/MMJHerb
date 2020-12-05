@@ -394,12 +394,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.header__content-link, .advantages__link {
+.header__content-link, .advantages__link, .process__item-link a {
   display: inline-block;
   background: #FF802F;
   color: #fff;
-  -webkit-box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
-          box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
+  -webkit-box-shadow: 0px 10px 18px rgba(255, 128, 47, 0.4);
+          box-shadow: 0px 10px 18px rgba(255, 128, 47, 0.4);
   border-radius: 30px;
   text-align: center;
 }
@@ -539,6 +539,8 @@ body {
   padding: 17px 35px;
   font-size: 16px;
   line-height: 100%;
+  -webkit-box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
+          box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
 }
 
 .features {
@@ -909,4 +911,110 @@ body {
 
 .process {
   margin-top: 80px;
+}
+
+.process__descr {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.process__list {
+  margin-top: 42px;
+}
+
+.process__item {
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+          box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+  border-radius: 12px;
+}
+
+.process__item-header {
+  padding-left: 89px;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.process__item-header::before {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  top: 0;
+}
+
+.process__item-header--pc::before {
+  background: url("../../images/process/pc.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.process__item-header--mail::before {
+  background: url("../../images/process/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.process__item-header--marijuana::before {
+  background: url("../../images/process/marijuana.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.process__item-header--pc .process__item-step {
+  margin-top: 15px;
+}
+
+.process__item-header--pc .process__item-title {
+  margin-bottom: 5px;
+}
+
+.process__item-step {
+  display: inline-block;
+  color: #AEC4B1;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.process__item-title {
+  color: #FF802F;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.process__item-info {
+  margin-top: 28px;
+}
+
+.process__item-info p + p {
+  margin-top: 13px;
+}
+
+.process__item-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.process__item-link a {
+  padding: 18px 21px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
 }
