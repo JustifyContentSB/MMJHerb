@@ -206,45 +206,47 @@
 						<h2 class="section-title">Get your <br> recommendation now!</h2>
 						<form class="order__form">
 							<div class="order__form-top">
-								<p class="order__about">Doctor's Recommendation in digital format</p>
-								<div class="order__form-auto">
-									<div class="order__form-label">
-										<label>
-											<input type="checkbox" name="order-auto">
-											<span class="order__form-checkbox"></span>
-											<p class="order__form-text">Within 10 minutes</p>
-										</label>
-									</div>
-									<div class="order__form-label">
-										<label>
-											<input type="checkbox" name="order-auto">
-											<span class="order__form-checkbox"></span>
-											<p class="order__form-text">Possess up to 8 oz.</p>
-										</label>
+								<div class="order__form-top__inner">
+									<p class="order__form-about">Doctor's Recommendation in digital format</p>
+									<div class="order__form-auto">
+										<div class="order__form-choose">
+											<label class="order__form-label">
+												<input disabled checked type="checkbox" name="order-auto">
+												<span class="order__form-checkbox"></span>
+												<p class="order__form-text">Within 10 minutes</p>
+											</label>
+										</div>
+										<div class="order__form-choose">
+											<label class="order__form-label">
+												<input disabled checked type="checkbox" name="order-auto">
+												<span class="order__form-checkbox"></span>
+												<p class="order__form-text">Possess up to 8 oz.</p>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="order__form-bottom">
-								<span>Options</span>
+								<span class="order__form-bottom__title">Options:</span>
 								<div class="order__form-options">
-									<div class="order__form-label">
-										<label>
+									<div class="order__form-choose">
+										<label class="order__form-label">
 											<input type="checkbox" name="order-options">
 											<span class="order__form-checkbox"></span>
 											<p class="order__form-text">Official MMJ Doctor's Recommendation in paper format</p>
 											<span class="order__form-price">+$10</span>
 										</label>
 									</div>
-									<div class="order__form-label">
-										<label>
+									<div class="order__form-choose">
+										<label class="order__form-label">
 											<input type="checkbox" name="order-options">
 											<span class="order__form-checkbox"></span>
 											<p class="order__form-text">Plastic MMJ-ID Card with Personal Photo</p>
 											<span class="order__form-price">+$15</span>
 										</label>
 									</div>
-									<div class="order__form-label">
-										<label>
+									<div class="order__form-choose">
+										<label class="order__form-label">
 											<input type="checkbox" name="order-options">
 											<span class="order__form-checkbox"></span>
 											<p class="order__form-text">Permit to grow up to 99 plant</p>
@@ -252,13 +254,17 @@
 										</label>
 									</div>
 								</div>
-							</div>
-							<div class="order__form-total">
-								<span class="total__title">Total:</span>
-								<ul class="order__form-total__list">
-									<li></li>
-								</ul>
-								<button class="order__form-submit">Order now from <span class="order__form-cost">$29</span></button>
+								<div class="order__form-total total">
+									<span class="total__title">Total:</span>
+									<ul class="total__list">
+										<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
+										<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
+										<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
+										<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
+										<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
+									</ul>
+								</div>
+								<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
 							</div>
 						</form>
 						<div class="order__renew">

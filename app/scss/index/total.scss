@@ -1,0 +1,25 @@
+.total {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 100%;
+		color: $green;
+		margin-right: 10px;
+	}
+	&__list {
+		display: flex;
+		li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
