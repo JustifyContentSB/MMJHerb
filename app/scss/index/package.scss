@@ -1,0 +1,32 @@
+.package {
+	margin-top: 80px;
+	&__inner {
+		padding: 50px 15px;
+		border-radius: 20px;
+		background: url('../../images/package/package-bg-tel.png'), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);;
+		color: #fff;
+		text-align: center;
+	}
+	&__title {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 120%;
+	}
+	&__descr {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 190%;
+		span {
+			display: block;
+			font-weight: 600;
+		}
+	}
+	&__link {
+		margin-top: 25px;
+		a {
+			@extend %orangeBtn;
+			padding: 14px 32px;
+			box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
+		}
+	}
+}

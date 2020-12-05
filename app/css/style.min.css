@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.header__content-link, .advantages__link, .process__item-link a, .order__form-submit button {
+.header__content-link, .advantages__link, .process__item-link a, .order__form-submit button, .package__link a {
   display: inline-block;
   background: #FF802F;
   color: #fff;
@@ -1306,4 +1306,43 @@ body {
   border: 1px solid #759178;
   color: #759178;
   border-radius: 30px;
+}
+
+.package {
+  margin-top: 80px;
+}
+
+.package__inner {
+  padding: 50px 15px;
+  border-radius: 20px;
+  background: url("../../images/package/package-bg-tel.png"), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.package__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.package__descr {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 190%;
+}
+
+.package__descr span {
+  display: block;
+  font-weight: 600;
+}
+
+.package__link {
+  margin-top: 25px;
+}
+
+.package__link a {
+  padding: 14px 32px;
+  -webkit-box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
+          box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
 }
