@@ -1,0 +1,32 @@
+.seller {
+	margin-top: 31px;
+	&__inner {
+		padding: 21px 15px 20px;
+		color: #fff;
+		background: $linearBg;
+		border-radius: 10px;
+	}
+	&__title {
+		font-size: 22px;
+		line-height: 130%;
+		font-weight: 300;
+		text-align: center;
+		span {
+			font-weight: 600;
+		}
+	}
+	&__rating {
+		margin-top: 18px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		&-inner {
+			line-height: 100%;
+			p {
+				margin-bottom: 3px;
+				text-align: center;
+				font-size: 10px;
+			}
+		}
+	}
+}

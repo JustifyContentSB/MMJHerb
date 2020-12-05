@@ -592,3 +592,48 @@ body {
   font-size: 10px;
   line-height: 130%;
 }
+
+.seller {
+  margin-top: 31px;
+}
+
+.seller__inner {
+  padding: 21px 15px 20px;
+  color: #fff;
+  background: linear-gradient(165.08deg, #AEC4B1 0%, #749078 100%);
+  border-radius: 10px;
+}
+
+.seller__title {
+  font-size: 22px;
+  line-height: 130%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.seller__title span {
+  font-weight: 600;
+}
+
+.seller__rating {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.seller__rating-inner {
+  line-height: 100%;
+}
+
+.seller__rating-inner p {
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 10px;
+}
