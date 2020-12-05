@@ -1,6 +1,7 @@
 $mainColor: #8F9F91;
 $orangeColor: #FF802F;
 $linearBg: linear-gradient(165.08deg, #AEC4B1 0%, #749078 100%);
+$green: #759178;
 
 %orangeBtn {
 	display: inline-block;
@@ -8,4 +9,5 @@ $linearBg: linear-gradient(165.08deg, #AEC4B1 0%, #749078 100%);
 	color: #fff;
 	box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
 	border-radius: 30px;
+	text-align: center;
 }

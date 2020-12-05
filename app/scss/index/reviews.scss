@@ -1,0 +1,30 @@
+.reviews {
+	margin-top: 80px;
+	background: $linearBg;
+	border-radius: 20px;
+	&__inner {
+		padding: 40px 0 35px;
+	}
+	&__title {
+		color: #fff;
+	}
+	&__list {
+		margin-top: 40px;
+		padding: 20px 0 15px;
+		overflow: hidden;
+		background: #FFFFFF;
+		border-radius: 12px;
+	}
+	&__open {
+		margin-top: 6px;
+		text-align: center;
+		color: rgba($green, 0.5);
+		text-decoration: underline;
+	}
+	&__leave {
+		margin-top: 50px;
+		text-align: center;
+		color: rgba(#fff, 0.5);
+		text-decoration: underline;
+	}
+}
