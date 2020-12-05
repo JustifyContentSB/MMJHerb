@@ -1370,3 +1370,42 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+.faq {
+  margin-top: 80px;
+}
+
+.faq__list {
+  margin-top: 40px;
+}
+
+.faq__item {
+  padding: 25px 0;
+  border-bottom: 2px solid #E0E8E3;
+}
+
+.faq__open {
+  display: block;
+  padding-right: 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130%;
+  color: #556658;
+  position: relative;
+}
+
+.faq__open::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 15px;
+  height: 8px;
+  background: url("../../images/icons/arrow.svg");
+}
+
+.faq__text {
+  display: none;
+}
