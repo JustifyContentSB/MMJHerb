@@ -1346,3 +1346,27 @@ body {
   -webkit-box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
           box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
 }
+
+.videos {
+  margin-top: 80px;
+  background: #F9FBF9;
+  border-radius: 20px;
+}
+
+.videos__inner {
+  padding: 60px 0 88px;
+  text-align: center;
+}
+
+.videos__descr {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.videos__list {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -1,0 +1,18 @@
+.videos {
+	margin-top: 80px;
+	background: #F9FBF9;
+	border-radius: 20px;
+	&__inner {
+		padding: 60px 0 88px;
+		text-align: center;
+	}
+	&__descr {
+		margin-top: 40px;
+		font-size: 18px;
+		line-height: 130%;
+	}
+	&__list {
+		margin-top: 25px;
+		display: flex;
+	}
+}
