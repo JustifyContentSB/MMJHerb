@@ -1,0 +1,51 @@
+.card {
+	margin-top: 80px;
+	&__title {
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 120%;
+		text-align: center;
+		color: #759178;
+	}
+	&__list {
+		margin-top: 42px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: center;
+		&-title {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 100%;
+			color: $mainColor;
+		}
+		li {
+			width: calc(50% - 5px);
+			margin-bottom: 10px;
+			padding: 20px 15px;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+			border-radius: 12px;
+			&:last-child {
+				width: 100%;
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+	&__num {
+		margin-top: 15px;
+		display: inline-block;
+		color: $orangeColor;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 100%;
+	}
+	&__text {
+		margin-top: 13px;
+		font-size: 12px;
+		line-height: 130%;
+		color: $mainColor;
+	}
+}
