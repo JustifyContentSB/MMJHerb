@@ -1,0 +1,21 @@
+.instruction {
+	margin-top: 30px;
+	&__inner {
+		padding: 30px 25px 25px 25px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+		border-radius: 12px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 120%;
+		text-align: center;
+		color: $orangeColor;
+	}
+	&__video {
+		margin-top: 25px;
+		text-align: center;
+		line-height: 100%;
+	}
+}
