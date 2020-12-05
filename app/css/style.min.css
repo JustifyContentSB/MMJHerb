@@ -428,7 +428,7 @@ body {
 }
 
 .header__inner {
-  padding-bottom: 80px;
+  padding-bottom: 76px;
 }
 
 .header__top {
@@ -530,4 +530,65 @@ body {
   padding: 17px 35px;
   font-size: 16px;
   line-height: 100%;
+}
+
+.features {
+  margin-top: -20px;
+  -webkit-box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+          box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+  background: #fff;
+}
+
+.features__list {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__list li {
+  width: calc(33.3% - 10px);
+}
+
+.features__title {
+  padding-top: 45px;
+  font-size: 12px;
+  line-height: 120%;
+  color: #759178;
+  position: relative;
+}
+
+.features__title::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+
+.features__title--tourist::before {
+  background: url("../../images/features/luggage.svg");
+}
+
+.features__title--quality::before {
+  background: url("../../images/features/autumn.svg");
+}
+
+.features__title--cards::before {
+  background: url("../../images/features/student.svg");
+}
+
+.features__text {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 130%;
 }
