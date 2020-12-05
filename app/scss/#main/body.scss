@@ -4,4 +4,9 @@ body {
     // display: flex;
     // flex-direction: column;
     // justify-content: space-between;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+	line-height: 160%;
+	color: $mainColor;
 }

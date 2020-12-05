@@ -1,0 +1,81 @@
+.header {
+	background: linear-gradient(165.08deg, #AEC4B1 0%, #749078 100%);
+	color: #fff;
+	&__inner {
+		padding-bottom: 80px;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__menu {
+		display: none;
+	}
+	&__toggle {
+		width: 20px;
+		height: 15px;
+		margin-bottom: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		span {
+			display: block;
+			height: 3px;
+			background: #FFFFFF;
+			border-radius: 2px;
+			box-shadow: 0 6px #fff, 0 12px #fff;
+		}
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+		&:active {
+			opacity: 0.3;
+		}
+	}
+	&__bottom {
+		margin-top: 30px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -50px;
+			right: -15px;
+			width: 178px;
+			height: 310px;
+			background: url('../../images/header/girl-tel.png');
+		}
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 100%;
+		font-weight: 600;
+	}
+	&__descr {
+		margin-top: 16px;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 300;
+		span {
+			font-weight: 600;
+		}
+		&-num {
+			display: inline-block;
+			padding: 5px;
+			background: rgba(#ffffff, 0.1);
+			border-radius: 4px;
+		}
+	}
+	&__content {
+		width: 170px;
+		&-link {
+			@extend %orangeBtn;
+			margin-top: 24px;
+			padding: 17px 35px;
+			font-size: 16px;
+			line-height: 100%;
+		}
+	}
+}

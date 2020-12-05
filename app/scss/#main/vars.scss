@@ -1,0 +1,10 @@
+$mainColor: #8F9F91;
+$orangeColor: #FF802F;
+
+%orangeBtn {
+	display: inline-block;
+	background: $orangeColor;
+	color: #fff;
+	box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
+	border-radius: 30px;
+}
