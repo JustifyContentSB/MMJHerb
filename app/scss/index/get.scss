@@ -1,0 +1,39 @@
+.get {
+	padding: 25px 0 30px 25px;
+	margin-top: 80px;
+	background: linear-gradient(142.06deg, #FDFDFD 0%, #FFFDFD 101.91%);
+	box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.08);
+	border-radius: 20px;
+	&__inner {
+		width: 312px;
+		padding-right: 162px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -30px;
+			right: 17px;
+			width: 156px;
+			height: 268px;
+			background: url('../../images/get/doctor.png');
+		}
+	}
+	&__title {
+		text-align: left;
+	}
+	&__text {
+		margin-top: 15px;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 130%;
+		color: $green;
+	}
+	&__link {
+		@extend %orangeBtn;
+		margin-top: 20px;
+		padding: 17px 33px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 100%;
+	}
+}

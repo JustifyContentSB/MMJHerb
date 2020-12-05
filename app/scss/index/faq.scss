@@ -1,5 +1,5 @@
 .faq {
-	margin-top: 80px;
+	margin-top: 77px;
 	&__list {
 		margin-top: 40px;
 	}
@@ -24,6 +24,9 @@
 			width: 15px;
 			height: 8px;
 			background: url('../../images/icons/arrow.svg');
+		}
+		&--active + .faq__text {
+			display: block;
 		}
 	}
 	&__text {

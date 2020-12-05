@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.header__content-link, .advantages__link, .process__item-link a, .order__form-submit button, .package__link a {
+.header__content-link, .advantages__link, .process__item-link a, .order__form-submit button, .package__link a, .get__link {
   display: inline-block;
   background: #FF802F;
   color: #fff;
@@ -1372,7 +1372,7 @@ body {
 }
 
 .faq {
-  margin-top: 80px;
+  margin-top: 77px;
 }
 
 .faq__list {
@@ -1406,6 +1406,55 @@ body {
   background: url("../../images/icons/arrow.svg");
 }
 
+.faq__open--active + .faq__text {
+  display: block;
+}
+
 .faq__text {
   display: none;
+}
+
+.get {
+  padding: 25px 0 30px 25px;
+  margin-top: 80px;
+  background: linear-gradient(142.06deg, #FDFDFD 0%, #FFFDFD 101.91%);
+  -webkit-box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.08);
+          box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.08);
+  border-radius: 20px;
+}
+
+.get__inner {
+  width: 312px;
+  padding-right: 162px;
+  position: relative;
+}
+
+.get__inner::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 17px;
+  width: 156px;
+  height: 268px;
+  background: url("../../images/get/doctor.png");
+}
+
+.get__title {
+  text-align: left;
+}
+
+.get__text {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130%;
+  color: #759178;
+}
+
+.get__link {
+  margin-top: 20px;
+  padding: 17px 33px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
 }
