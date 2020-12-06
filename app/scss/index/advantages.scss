@@ -4,10 +4,6 @@
 		margin-top: 14px;
 		display: flex;
 		flex-wrap: wrap;
-		/*background: url('../../images/advantages/tabl.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top -30px left 60%;*/
 		overflow: hidden;
 		font-size: 13px;
 		line-height: 130%;
@@ -30,10 +26,11 @@
 					position: absolute;
 					left: 10px;
 					bottom: 0;
-					width: 165px;
+					width: 113%;
 					height: 1px;
 					background: url('../../images/advantages/line-2.png');
 					background-repeat: no-repeat;
+					background-size: cover;
 				}
 			}
 			&:nth-child(2) {
@@ -76,10 +73,11 @@
 					position: absolute;
 					right: 0;
 					bottom: 0;
-					width: 165px;
+					width: 113%;
 					height: 1px;
 					background: url('../../images/advantages/line-2.png');
 					background-repeat: no-repeat;
+					background-size: cover;
 					transform: rotate(180deg);
 				}
 			}

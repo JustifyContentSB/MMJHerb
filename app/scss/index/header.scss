@@ -1,6 +1,8 @@
 .header {
 	background: $linearBg;
 	color: #fff;
+	position: relative;
+	z-index: 1000;
 	&__inner {
 		padding-bottom: 76px;
 	}
@@ -9,9 +11,7 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-	}
-	&__menu {
-		display: none;
+		position: relative;
 	}
 	&__toggle {
 		width: 20px;
@@ -35,7 +35,92 @@
 			opacity: 0.3;
 		}
 	}
+	&__menu {
+		display: none;
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		background: #fff;
+		color: $green;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		font-size: 16px;
+		line-height: 100%;
+		text-align: center;
+		box-shadow: 0px 5px 10px rgba(17, 17, 17, 0.06);
+		border-radius: 0px 0px 20px 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		transition: all .5s ease;
+		/*transform: perspective(600px) translate(0px, -100%) rotate(45deg);*/
+		transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+		&-toggle {
+			margin: 0;
+			margin-left: 15px;
+			width: 16px;
+			height: 12px;
+			span {
+				height: 2px;
+				background: $green;
+				box-shadow: 0 6px $green, 0 12px $green;
+			}
+		}
+		&-top {
+			padding: 10px 15px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			border-bottom: 1px solid #E0E8E3;
+		}
+		&-order {
+			margin-left: auto;
+			padding: 8px 14px;
+			border: 1px solid #FF802F;
+			border-radius: 30px;
+			color: $orangeColor;
+			font-size: 12px;
+			line-height: 100%;
+			text-align: center;
+		}
+		&-logo {
+			display: flex;
+		}
+		&-bottom {
+			padding: 35px 15px;
+		}
+		&-soc {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			li {
+				margin-right: 8px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				border: 1px solid $green;
+			}
+			.svg {
+				fill: $green;
+			}
+		}
+	}
+	&__nav {
+		li {
+			margin-bottom: 15px;
+		}
+	}
 	&__bottom {
+		max-width: 310px;
+		margin: 0 auto;
 		margin-top: 30px;
 		position: relative;
 		&::after {
@@ -78,5 +163,10 @@
 			line-height: 100%;
 			box-shadow: 0px 10px 18px rgba(85, 102, 88, 0.36);
 		}
+	}
+	&__features {
+		position: absolute;
+		top: 355px;
+		margin: 0 auto;
 	}
 }

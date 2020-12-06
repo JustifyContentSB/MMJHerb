@@ -8,6 +8,12 @@
 	&__title {
 		color: #fff;
 	}
+	&__image {
+		text-align: center;
+		&-dekstop {
+			display: none;
+		}
+	}
 	&__list {
 		margin-top: 40px;
 		padding: 20px 0 15px;
@@ -26,5 +32,18 @@
 		text-align: center;
 		color: rgba(#fff, 0.5);
 		text-decoration: underline;
+	}
+}
+
+@media screen  and(min-width: 768px) {
+	.reviews {
+		&__image {
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: inline;
+			}
+		}
 	}
 }

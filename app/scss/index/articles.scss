@@ -4,12 +4,31 @@
 		margin-top: 40px;
 	}
 	&__item {
+		width: 290px;
+		max-width: 380px;
+		margin: 0 auto;
 		margin-bottom: 40px;
 	}
 	&__img {
+		width: 290px;
+		height: 220px;
 		border-radius: 12px 12px 0 0;
 		overflow: hidden;
 		display: flex;
+		justify-content: center;
+		img {
+			width: auto;
+			height: auto;
+		}
+		&-tel {
+			width: 290px;
+			height: 220px;
+		}
+		&-dekstop {
+			display: none;
+			width: 380px;
+			height: 250px;
+		}
 	}
 	&__info {
 		padding: 30px 25px 25px;
@@ -38,6 +57,24 @@
 			font-size: 14px;
 			line-height: 100%;
 			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.articles {
+		&__item {
+			width: 380px;
+		}
+		&__img {
+			width: 380px;
+			height: 250px;
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: inline;
+			}
 		}
 	}
 }

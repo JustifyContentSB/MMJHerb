@@ -13,12 +13,18 @@
 	}
 	&__logo {
 		display: flex;
+		&-dekstop {
+			display: none;
+		}
 	}
 	&__soc {
 		display: flex;
 		flex-wrap: wrap;
 		li {
 			margin-left: 8px;
+			&:first-child {
+				margin-left: 0;
+			}
 		}
 		a {
 			display: flex;
@@ -31,6 +37,8 @@
 		}
 	}
 	&__menu {
+		width: 100%;
+		max-width: 492px;
 		margin-top: 50px;
 		font-weight: 300;
 		font-size: 12px;
@@ -59,5 +67,47 @@
 	}
 	&__year {
 		margin-top: 30px;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.footer {
+		&__inner {
+			padding-top: 50px;
+		}
+		&__logo {
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: inline;
+			}
+		}
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+		&__list {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__menu {
+			margin-top: 0;
+			font-size: 15px;
+			&-title {
+				font-size: 18px;
+			}
+		}
+		&__soc {
+			margin-top: 37px;
+		}
+		&__bottom {
+			font-size: 15px;
+		}
+		&__copy {
+			line-height: 180%;
+		}
 	}
 }

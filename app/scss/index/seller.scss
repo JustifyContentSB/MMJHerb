@@ -1,5 +1,5 @@
 .seller {
-	margin-top: 31px;
+	margin-top: 174px;
 	&__inner {
 		padding: 21px 15px 20px;
 		color: #fff;
@@ -16,6 +16,8 @@
 		}
 	}
 	&__rating {
+		max-width: 260px;
+		margin: 0 auto;
 		margin-top: 18px;
 		display: flex;
 		justify-content: space-between;

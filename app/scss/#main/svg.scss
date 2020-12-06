@@ -1,0 +1,21 @@
+.svg {
+	fill: white;
+	max-height: 100%;
+	max-width: 100%;
+	&-facebook {
+		width: 7px;
+		height: 14px;
+	}
+	&-twitter {
+		width: 14px;
+		height: 11.4px;
+	}
+	&-youtube {
+		width: 14px;
+		height: 10px;
+	}
+	&-insta {
+		width: 14px;
+		height: 14px;
+	}
+}

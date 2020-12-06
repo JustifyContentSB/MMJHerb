@@ -42,3 +42,16 @@
 		color: $mainColor;
 	}
 }
+
+@media screen and(min-width: 768px) {
+	.card {
+		&__list {
+			li {
+				width: calc(33.3% - 7px);
+				&:last-child {
+					width: calc(33.3% - 7px);
+				}
+			}
+		}
+	}
+}
