@@ -18,11 +18,11 @@
 						<a class="header__logo" href="/"><img src="images/icons/logo.png" alt="logo" width="45" height="60"></a>
 						<a class="header__toggle popup-link" href="#popup"><span></span></a>
 						<div class="header__menu popup" id="popup">
-							<div class="header__menu-top">
+							<!-- <div class="header__menu-top">
 								<a class="header__menu-logo" href="/"><img src="images/icons/logo-mmj.png" alt="logo" width="110" height="30"></a>
 								<a class="header__menu-order" href="#">Order now</a>
 								<a class="header__toggle header__menu-toggle" href="#"><span></span></a>
-							</div>
+							</div> -->
 							<div class="header__menu-bottom">
 								<nav class="header__nav">
 									<ul>
@@ -66,12 +66,23 @@
 								</ul>
 							</div>
 						</div>
+						<a class="header__menu-order" href="#">Order now</a>
 					</div>
 
 					<div class="header__bottom">
 						<div class="header__content">
 							<h1 class="header__title">MMJ DOCTOR ONLINE</h1>
 							<p class="header__descr">Our doctors have issued <span class="header__descr-num">246,558</span> <br> Medical Marijuana Cards <span>in California</span></p>
+							<div class="header__seller">
+								<div class="seller__rating header__rating">
+									<img src="images/seller/trustpilot.png" alt="trustpilot" width="130" height="31">
+									<div class="seller__rating-inner">
+										<p>8.7 out of 10</p>
+										<img src="images/seller/rating.png" alt="rating" width="117" height="21">
+									</div>
+								</div>
+								<p class="header__bestseller">Best seller reviews <span>from 2016</span></p>
+							</div>
 							<a class="header__content-link" href="#">Order now</a>
 						</div>
 					</div>
@@ -188,7 +199,7 @@
 							<li class="process__item">
 								<header class="process__item-header process__item-header--pc">
 									<span class="process__item-step">Step 1</span>
-									<h3 class="process__item-title">Apply fully online</h3>
+									<h3 class="process__item-title"><span>Apply</span> fully online</h3>
 								</header>
 								<div class="process__item-info">
 									<p>You don't need to wait for a doctor for long or arrange an appointment any more!</p> 
@@ -200,7 +211,7 @@
 							<li class="process__item">
 								<header class="process__item-header process__item-header--mail">
 									<span class="process__item-step">Step 2</span>
-									<h3 class="process__item-title">Get the recommendation</h3>
+									<h3 class="process__item-title"><span>Get</span> the recommendation</h3>
 								</header>
 								<div class="process__item-info">
 									<p>As soon as you are approved (in 10-15 min), you will get the digital copy of your MMJ recommendation to the email address. The original paper document will be delivered with 2-4 business days.</p>
@@ -210,7 +221,7 @@
 							<li class="process__item">
 								<header class="process__item-header process__item-header--marijuana">
 									<span class="process__item-step">Step 3</span>
-									<h3 class="process__item-title">Buy the medical marijuana</h3>
+									<h3 class="process__item-title"><span>Buy</span> the medical marijuana</h3>
 								</header>
 								<div class="process__item-info">
 									<p>With the help of your recommendation or plastic MMJ card you may legally purchase marijuana for medical purposes in any dispensary or cultivate up to 99 plants as it shows that you are approved as medical marijuana patient.</p>
@@ -226,6 +237,12 @@
 					<div class="instruction__inner">
 						<h2 class="instruction__title">Ordering Instructions</h2>
 						<div class="instruction__video"><img src="images/instruction/instruction-video.png" alt="instruction" width="241" height="181"></div>
+						<div class="instruction__play">
+							<p>Watch a short video with ordering instructions</p>
+							<a href="#">
+								Play 
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -234,72 +251,79 @@
 				<div class="container">
 					<div class="order__inner">
 						<h2 class="section-title">Get your <br> recommendation now!</h2>
-						<form class="order__form">
-							<div class="order__form-top">
-								<div class="order__form-top__inner">
-									<p class="order__form-about">Doctor's Recommendation in digital format</p>
-									<div class="order__form-auto">
-										<div class="order__form-choose">
-											<label class="order__form-label">
-												<input disabled checked type="checkbox" name="order-auto">
-												<span class="order__form-checkbox"></span>
-												<p class="order__form-text">Within 10 minutes</p>
-											</label>
+						<div class="order__form-wrapper">
+							<div class="order__form-info">
+								<div class="order__form-img"></div>
+								<form class="order__form">
+									<div class="order__form-top">
+										<div class="order__form-top__inner">
+											<p class="order__form-about">Doctor's Recommendation in digital format</p>
+											<div class="order__form-auto">
+												<p class="order__form-type">Included</p>
+												<div class="order__form-choose">
+													<label class="order__form-label">
+														<input disabled checked type="checkbox" name="order-auto">
+														<span class="order__form-checkbox"></span>
+														<p class="order__form-text">Within 10 minutes</p>
+													</label>
+												</div>
+												<div class="order__form-choose">
+													<label class="order__form-label">
+														<input disabled checked type="checkbox" name="order-auto">
+														<span class="order__form-checkbox"></span>
+														<p class="order__form-text">Possess up to 8 oz.</p>
+													</label>
+												</div>
+											</div>
 										</div>
-										<div class="order__form-choose">
-											<label class="order__form-label">
-												<input disabled checked type="checkbox" name="order-auto">
-												<span class="order__form-checkbox"></span>
-												<p class="order__form-text">Possess up to 8 oz.</p>
-											</label>
+									</div>
+									<div class="order__form-bottom">
+										<span class="order__form-bottom__title">Options:</span>
+										<div class="order__form-options">
+											<div class="order__form-choose">
+												<label class="order__form-label">
+													<input type="checkbox" name="order-options">
+													<span class="order__form-checkbox"></span>
+													<p class="order__form-text">Official MMJ Doctor's Recommendation in paper format</p>
+													<span class="order__form-price">+$10</span>
+												</label>
+											</div>
+											<div class="order__form-choose">
+												<label class="order__form-label">
+													<input type="checkbox" name="order-options">
+													<span class="order__form-checkbox"></span>
+													<p class="order__form-text">Plastic MMJ-ID Card with Personal Photo</p>
+													<span class="order__form-price">+$15</span>
+												</label>
+											</div>
+											<div class="order__form-choose">
+												<label class="order__form-label">
+													<input type="checkbox" name="order-options">
+													<span class="order__form-checkbox"></span>
+													<p class="order__form-text">Permit to grow up to 99 plant</p>
+													<span class="order__form-price">+$20</span>
+												</label>
+											</div>
 										</div>
+										<div class="order__form-total total">
+											<span class="total__title">Total:</span>
+											<ul class="total__list">
+												<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
+												<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
+												<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
+												<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
+												<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
+											</ul>
+										</div>
+										<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
 									</div>
-								</div>
+								</form>
 							</div>
-							<div class="order__form-bottom">
-								<span class="order__form-bottom__title">Options:</span>
-								<div class="order__form-options">
-									<div class="order__form-choose">
-										<label class="order__form-label">
-											<input type="checkbox" name="order-options">
-											<span class="order__form-checkbox"></span>
-											<p class="order__form-text">Official MMJ Doctor's Recommendation in paper format</p>
-											<span class="order__form-price">+$10</span>
-										</label>
-									</div>
-									<div class="order__form-choose">
-										<label class="order__form-label">
-											<input type="checkbox" name="order-options">
-											<span class="order__form-checkbox"></span>
-											<p class="order__form-text">Plastic MMJ-ID Card with Personal Photo</p>
-											<span class="order__form-price">+$15</span>
-										</label>
-									</div>
-									<div class="order__form-choose">
-										<label class="order__form-label">
-											<input type="checkbox" name="order-options">
-											<span class="order__form-checkbox"></span>
-											<p class="order__form-text">Permit to grow up to 99 plant</p>
-											<span class="order__form-price">+$20</span>
-										</label>
-									</div>
-								</div>
-								<div class="order__form-total total">
-									<span class="total__title">Total:</span>
-									<ul class="total__list">
-										<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
-										<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
-										<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
-										<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
-										<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
-									</ul>
-								</div>
-								<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
+							
+							<div class="order__renew">
+								<p>Or renew your recommendation issued by any clinic, from $25 only</p>
+								<a href="#">Go</a>
 							</div>
-						</form>
-						<div class="order__renew">
-							<p>Or renew your recommendation issued by any clinic, from $25 only</p>
-							<a href="#">Go</a>
 						</div>
 					</div>
 				</div>
@@ -383,7 +407,7 @@
 									<img class="articles__img-dekstop" src="images/articles/article-2-dekstop.jpg" alt="article" width="380" height="250">
 								</div>
 								<div class="articles__info">
-									<h3 class="articles__title">Medical and recreational marijuana: pros or cons</h3>
+									<h3 class="articles__title">Medical and recreational <br> marijuana: pros or cons</h3>
 									<p class="articles__text">MMJ still in the lead In the light of recently accepted Prop. 64 I've decided to prove: never exchange an old friend for a new one. How good-looking, recreational and tempting it could seem at first sight.</p>
 									<div class="articles__link"><a href="#">Read article</a></div>
 								</div>

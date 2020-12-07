@@ -78,3 +78,36 @@
 		}
 	}
 }
+
+@media screen and(min-width: 768px) {
+	.articles {
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: stretch;
+		}
+		&__item {
+			margin: 0;
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 130%;
+		}
+		&__text {
+			margin-bottom: 25px;
+			font-size: 16px;
+		}
+		&__link {
+			margin-top: auto;
+			a {
+				font-size: 18px;
+			}
+		}
+		&__info {
+			height: calc(100% - 250px);
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

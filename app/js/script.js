@@ -4,7 +4,7 @@ let lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
 
-let timeout = 800;
+let timeout = 0;
 
 if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
@@ -47,8 +47,8 @@ function popupOpen(currentPopup) {
 }
 
 function bodyLock() {
-	let lockPaddingValue = window.innerWidth = document.querySelector('.wrapper').offsetWidth + 'px';
-
+	// let lockPaddingValue = window.innerWidth = document.querySelector('.wrapper').offsetWidth + 'px';
+	let lockPaddingValue = '17px';
 	if (lockPadding.length > 0) {
 		for(let index = 0; index < lockPadding.length; index++) {
 			let el = lockPadding[index];

@@ -55,3 +55,26 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1200px) {
+	.card {
+		&__list {
+			max-width: 860px;
+			margin: 0 auto;
+			margin-top: 80px;
+			li {
+				width: 260px;
+				margin-bottom: 40px;
+			}
+			&-title {
+				font-size: 22px;
+			}
+		}
+		&__num {
+			font-size: 36px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+}

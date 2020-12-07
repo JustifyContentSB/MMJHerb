@@ -86,3 +86,42 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1200px) {
+	.process {
+		margin-top: 150px;
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+		&__item {
+			width: 370px;
+			&-step {
+				padding: 12px 15px;
+				font-size: 16px;
+				position: absolute;
+				top: -45px;
+				right: 0;
+				background: #FFFFFF;
+				box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
+				border-radius: 12px;
+			}
+			&-title {
+				margin-top: 10px;
+				font-size: 18px;
+				span {
+					font-size: 24px;
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+			&-header--pc {
+				.process__item-step {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
