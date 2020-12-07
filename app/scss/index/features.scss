@@ -74,3 +74,24 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1200px) {
+	.features {
+		background: transparent;
+		box-shadow: none;
+		&__list {
+			padding: 0;
+			li {
+				width: 300px;
+			}
+		}
+		&__inner {
+			border-radius: 50px;
+			box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+			border-radius: 24px;
+		}
+		&__text {
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,35 +1,71 @@
 .faq {
+	max-width: 790px;
+	margin: 0 auto;
 	margin-top: 77px;
 	&__list {
 		margin-top: 40px;
 	}
-	&__item {
-		padding: 25px 0;
-		border-bottom: 2px solid #E0E8E3;
-	}
 	&__open {
 		display: block;
-		padding-right: 25px;
 		font-weight: 300;
 		font-size: 15px;
 		line-height: 130%;
 		color: #556658;
 		position: relative;
-		&::after {
-			content: '';
-			position: absolute;
-			right: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 15px;
-			height: 8px;
-			background: url('../../images/icons/arrow.svg');
-		}
-		&--active + .faq__text {
+		border-bottom: 2px solid #E0E8E3;
+		span {
 			display: block;
+			padding: 25px 0;
+			padding-right: 25px;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 15px;
+				height: 8px;
+				background: url('../../images/icons/arrow.svg');
+				transition: all .3s ease;
+			}
+		}
+		&--active  {
+			border-color: $green;
+			.faq__text {
+				display: block;
+			}
+			span::after {
+				top: 43%;
+				transform: rotate(180deg);
+			}
 		}
 	}
 	&__text {
 		display: none;
+		margin-bottom: 25px;
+		transition: all .2s ease;
+	}
+}
+
+@media screen and(min-width: 1200px) {
+	.faq {
+		margin-top: 150px;
+		&__list {
+			margin-top: 55px;
+		}
+		&__open {
+			span {
+				font-size: 20px;
+				line-height: 130%;
+			}
+		}
+		&__text {
+			background: #F9FBF9;
+			border-radius: 20px;
+			padding: 25px;
+			font-size: 16px;
+			line-height: 180%;
+		}
 	}
 }

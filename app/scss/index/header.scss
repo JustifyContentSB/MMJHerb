@@ -297,7 +297,21 @@
 			display: flex;
 		}
 		&__features {
-			display: none;
+			top: auto;
+			bottom: -100px;
+			width: 100%;
+			background: transparent;
+			.container {
+				width: 1075px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			.features__inner {
+				width: 1075px;
+				padding: 40px 50px;
+				background: #fff;
+			}
 		}
 	}
 }
