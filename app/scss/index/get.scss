@@ -45,3 +45,50 @@
 		margin-top: 100px;
 	}
 }
+
+@media screen and(min-width: 1200px) {
+	.get {
+		width: 995px;
+		margin: 0 auto;
+		margin-top: 150px;
+		padding: 60px;
+		background: url('../../images/get/get-bg.png');
+		background-size: cover;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 317px;
+			height: 421px;
+			background: url('../../images/get/doctor-dekstop.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			right: 63px;
+			bottom: 0;
+		}
+		&__inner {
+			margin: 0;
+			width: 513px;
+			max-width: 513px;
+			padding-right: 0;
+			&::after {
+				display: none;
+			}
+		}
+		&__title {
+			font-size: 60px;
+			line-height: 120%;
+		}
+		&__text {
+			margin-top: 25px;
+			font-size: 28px;
+			line-height: 130%;
+		}
+		&__link {
+			margin-top: 40px;
+			padding: 25px 35px;
+			font-size: 20px;
+			border-radius: 35px;
+		}
+	}
+}
