@@ -1,0 +1,30 @@
+.loading {
+	padding: 74px 25px 45px;
+	text-align: center;
+	&__alert {
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 120%;
+		color: $green;
+	}
+	&__descr {
+		margin-top: 15px;
+		margin-bottom: 11px;
+		font-size: 14px;
+		line-height: 140%;
+		color: #556658;
+	}
+	&__icon {
+		display: none;
+		margin-top: 30px;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.loading {
+		padding: 88px 45px 45px;
+		&__icon {
+			display: block;
+		}
+	}
+}

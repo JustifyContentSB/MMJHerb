@@ -1,0 +1,80 @@
+.state {
+	padding: 30px 25px;
+	text-align: center;
+	&__title {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 120%;
+		text-align: center;
+		color: $green;
+	}
+	&__choose {
+		margin-top: 25px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			width: 10px;
+			height: 5px;
+			background: url('../../images/icons/input-arrow.svg');
+		}
+		input {
+			width: 100%;
+			padding: 17px 20px;
+			padding-right: 40px;
+			border: 1px solid #E0E8E3;
+			border-radius: 6px;
+			&:focus {
+				outline: none;
+			}
+			&::placeholder {
+				color: $green;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 100%;
+			}
+		}
+	}
+	&__btn {
+		margin-top: 30px;
+		text-align: center;
+		button {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 100%;
+			color: #fff;
+			padding: 18px 22px;
+			background: $green;
+			box-shadow: 0px 10px 18px rgba(117, 145, 120, 0.4);
+			border-radius: 30px;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	&__descr {
+		margin-top: 20px;
+		font-size: 12px;
+		line-height: 140%;
+		text-align: center;
+		color: #556658;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.state {
+		padding: 50px 45px;
+		&__title {
+			font-size: 30px;
+			line-height: 120%;
+		}
+		&__choose {
+			margin-top: 30px; 
+		}
+		&__descr {
+			font-size: 14px;
+		}
+	}
+}

@@ -129,7 +129,7 @@
 			content: '';
 			position: absolute;
 			z-index: -1;
-			bottom: -55px;
+			bottom: -60px;
 			right: -15px;
 			width: 178px;
 			height: 310px;
@@ -181,7 +181,7 @@
 	}
 }
 
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 1200px) {
 	.header {
 		&__bottom {
 			max-width: 450px;
@@ -204,6 +204,10 @@
 
 @media screen and(min-width: 1200px) {
 	.header {
+		border-radius: 0px 0px 50px 50px;
+		background: url('../../images/header/line-bg.png'), linear-gradient(103.2deg, #AEC4B1 0%, #749078 100%);
+		background-size: cover;
+		background-position: center;
 		&__inner {
 			min-height: 812px;
 		}
