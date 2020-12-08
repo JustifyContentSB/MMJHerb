@@ -34,6 +34,11 @@
 			border: 1px solid #fff;
 			justify-content: center;
 			align-items: center;
+			transition: all .3s ease;
+			&:hover,
+			&:focus {
+				background: rgba(255, 255, 255, 0.2);
+			}
 		}
 	}
 	&__menu {
@@ -54,6 +59,12 @@
 		li {
 			margin-bottom: 15px;
 			color: rgba(#fff, 0.7);
+		}
+		a {
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
 		}
 	}
 	&__bottom {

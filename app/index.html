@@ -75,7 +75,9 @@
 							<p class="header__descr">Our doctors have issued <span class="header__descr-num">246,558</span> <br> Medical Marijuana Cards <span>in California</span></p>
 							<div class="header__seller">
 								<div class="seller__rating header__rating">
-									<img src="images/seller/trustpilot.png" alt="trustpilot" width="130" height="31">
+									<div class="header__rating-img">
+										<img src="images/seller/trustpilot.png" alt="trustpilot" width="130" height="31">
+									</div>
 									<div class="seller__rating-inner">
 										<p>8.7 out of 10</p>
 										<img src="images/seller/rating.png" alt="rating" width="117" height="21">
@@ -133,19 +135,25 @@
 						<h2 class="section-title">What is a Medical <br> Marijuana Card for?</h2>
 						<ul class="card__list">
 							<li>
-								<h3 class="card__list-title">Keep weed over</h3>
-								<span class="card__num">1oz</span>
-								<p class="card__text">You can buy and <br> keep up to 8oz</p>
+								<a href="#">
+									<h3 class="card__list-title">Keep weed over</h3>
+									<span class="card__num">1oz</span>
+									<p class="card__text">You can buy and <br> keep up to 8oz</p>
+								</a>
 							</li>
 							<li>
-								<h3 class="card__list-title">Buy weed from</h3>
-								<span class="card__num">18 years</span>
-								<p class="card__text">Serve <br> all adults (18+)</p>
+								<a href="#">
+									<h3 class="card__list-title">Buy weed from</h3>
+									<span class="card__num">18 years</span>
+									<p class="card__text">Serve <br> all adults (18+)</p>
+								</a>
 							</li>
 							<li>
-								<h3 class="card__list-title">Buy weed cheaper</h3>
-								<span class="card__num">up to 23%</span>
-								<p class="card__text">You can get <br> discount on weed</p>
+								<a href="#">
+									<h3 class="card__list-title">Buy weed cheaper</h3>
+									<span class="card__num">up to 23%</span>
+									<p class="card__text">You can get <br> discount on weed</p>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -178,13 +186,32 @@
 				<div class="container">
 					<div class="reviews__inner">
 						<h2 class="section-title reviews__title">Our reviews</h2>
-						<div class="reviews__list">
-							<div class="reviews__image">
-								<img class="reviews__image-tel" src="images/reviews/reviews-tel.jpg" alt="reviews">
-								<img class="reviews__image-dekstop" src="images/reviews/reviews-dekstop.jpg" alt="reviews">
+						<div>
+							<div class="reviews__list">
+								<div class="reviews__item">
+									<div class="reviews__image">
+										<img class="reviews__image-tel" src="images/reviews/reviews-tel.jpg" alt="reviews">
+										<img class="reviews__image-dekstop" src="images/reviews/reviews-dekstop.jpg" alt="reviews">
+									</div>
+									<div class="reviews__open"><a href="#">Оpen reviews</a></div>
+								</div>
+								<!-- <div class="reviews__item swiper-slide">
+									<div class="reviews__image">
+										<img class="reviews__image-tel" src="images/reviews/reviews-tel.jpg" alt="reviews">
+										<img class="reviews__image-dekstop" src="images/reviews/reviews-dekstop.jpg" alt="reviews">
+									</div>
+									<div class="reviews__open"><a href="#">Оpen reviews</a></div>
+								</div> -->
+								<!-- <div class="reviews__item swiper-slide">
+									<div class="reviews__image">
+										<img class="reviews__image-tel" src="images/reviews/reviews-tel.jpg" alt="reviews">
+										<img class="reviews__image-dekstop" src="images/reviews/reviews-dekstop.jpg" alt="reviews">
+									</div>
+									<div class="reviews__open"><a href="#">Оpen reviews</a></div>
+								</div> -->
 							</div>
-							<div class="reviews__open"><a href="#">Оpen reviews</a></div>
 						</div>
+						<div class="swiper-pagination"></div>
 						<div class="reviews__leave"><a href="#">Leave Review on Trustpilot</a></div>
 					</div>
 				</div>
@@ -305,17 +332,19 @@
 												</label>
 											</div>
 										</div>
-										<div class="order__form-total total">
-											<span class="total__title">Total:</span>
-											<ul class="total__list">
-												<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
-												<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
-												<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
-												<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
-												<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
-											</ul>
+										<div class="order__form-manage">
+											<div class="order__form-total total">
+												<span class="total__title">Total:</span>
+												<ul class="total__list">
+													<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
+													<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
+													<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
+													<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
+													<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
+												</ul>
+											</div>
+											<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
 										</div>
-										<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
 									</div>
 								</form>
 							</div>
@@ -531,6 +560,7 @@
 
 
 		<script src="js/libs/jquery-3.5.1.min.js"></script>
+		<script src="js/libs/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 
 	</div>

@@ -57,6 +57,10 @@
 			font-size: 14px;
 			line-height: 100%;
 			text-decoration: underline;
+			&:hover,
+			&:focus {
+				color: #79A982;
+			}
 		}
 	}
 }

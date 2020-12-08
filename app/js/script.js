@@ -1,8 +1,14 @@
-// function showList(){
-//     this.parentNode.children[1].classList.toggle("nav__block");
-//     this.parentNode.children[0].classList.toggle("nav__title--arrow")
-// }
+const slider = document.querySelector('.swider-container');
 
+let mySwiper = new Swiper('.swiper-container', {
+ 
+	slidesPreview: 3,
+	spaceBetween: 10,
+	pagination: {
+	    el: '.swiper-pagination',
+	    type: 'bullets',
+  	},
+})
 
 
 let faqOpen = document.querySelectorAll('.faq__open');

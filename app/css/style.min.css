@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url(#main/swiper-bundle.min.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -402,6 +403,12 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0px 10px 18px rgba(255, 128, 47, 0.4);
   border-radius: 30px;
   text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__content-link:hover, .advantages__link:hover, .process__item-link a:hover, .order__form-submit button:hover, .package__link a:hover, .get__link:hover, .header__content-link:focus, .advantages__link:focus, .process__item-link a:focus, .order__form-submit button:focus, .package__link a:focus, .get__link:focus {
+  background: #EC640D;
 }
 
 body {
@@ -481,6 +488,22 @@ body {
     font-size: 48px;
     line-height: 120%;
   }
+}
+
+.swiper {
+  /*&-pagination {
+		display: flex;
+		&-bullet {
+			display: block;
+			width: 8px;
+			height: 8px;
+			background: #fff;
+		}
+	}*/
+}
+
+.swiper-container {
+  width: 995px;
 }
 
 .header {
@@ -722,9 +745,7 @@ body {
 }
 
 .header__seller {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -857,9 +878,62 @@ body {
     top: 0;
     right: 0;
   }
+  .header__seller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 45px;
+  }
+  .header__seller .header__rating {
+    max-width: 330px;
+    margin-right: 30px;
+    padding: 13px 20px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .header__seller .header__rating-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 15px;
+  }
+  .header__bestseller {
+    max-width: 210px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+  .header__bestseller span {
+    display: block;
+    font-weight: 400;
+  }
   .header__content {
     width: 790px;
     margin-right: auto;
+  }
+  .header__content-link {
+    margin-top: 65px;
+    padding: 24px 45px;
+    padding-right: 114px;
+    position: relative;
+  }
+  .header__content-link::after {
+    content: '';
+    position: absolute;
+    width: 94px;
+    height: 101px;
+    background: url("../../images/header/papers.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -1px;
+    top: -14px;
   }
   .header__top {
     display: -webkit-box;
@@ -1079,11 +1153,14 @@ body {
 .card__list li {
   width: calc(50% - 5px);
   margin-bottom: 10px;
-  padding: 20px 15px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
           box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
   border-radius: 12px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .card__list li:last-child {
@@ -1092,6 +1169,15 @@ body {
 
 .card__list li:last-child br {
   display: none;
+}
+
+.card__list li:hover, .card__list li:focus {
+  top: -10px;
+}
+
+.card__list a {
+  display: block;
+  padding: 20px 15px;
 }
 
 .card__num {
@@ -1120,6 +1206,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .card {
+    margin-top: 290px;
+  }
   .card__list {
     max-width: 860px;
     margin: 0 auto;
@@ -1368,10 +1457,16 @@ body {
 
 .reviews__list {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__item {
   padding: 20px 0 15px;
+  border-radius: 12px;
   overflow: hidden;
   background: #FFFFFF;
-  border-radius: 12px;
 }
 
 .reviews__open {
@@ -1400,6 +1495,9 @@ body {
 @media screen and (min-width: 1200px) {
   .reviews {
     margin-top: 150px;
+  }
+  .reviews__item {
+    min-width: 585px;
   }
 }
 
@@ -1677,6 +1775,12 @@ body {
   margin-right: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .total__title {
+    color: #fff;
+  }
+}
+
 .order {
   margin-top: 85px;
 }
@@ -1922,7 +2026,25 @@ body {
     display: none;
   }
   .order__form-bottom {
+    margin-top: 30px;
+    padding: 0;
     background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .order__form-bottom__title {
+    padding: 20px 35px;
+    text-align: left;
+    display: block;
+    border-radius: 16px 16px 0px 0px;
+    padding: 20px 35px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+            box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
   }
   .order__form-wrapper {
     padding: 80px 129px;
@@ -1945,7 +2067,38 @@ body {
   .order__form-img {
     width: 388px;
     height: 696px;
-    background: #000;
+    background: url("../../images/order/iphone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .order__form-text {
+    font-size: 15px;
+  }
+  .order__form-price {
+    color: #fff;
+    font-size: 24px;
+  }
+  .order__form-options {
+    margin-top: 0;
+    border-top: 0;
+  }
+  .order__form-options input:checked ~ .order__form-checkbox {
+    border-color: #fff;
+  }
+  .order__form-options input:checked ~ .order__form-checkbox::after {
+    background: url("../../images/icons/check.svg");
+  }
+  .order__form-options .order__form-choose {
+    border-bottom: 0;
+  }
+  .order__form-options .order__form-choose:last-child .order__form-label {
+    border-bottom: 0;
+  }
+  .order__form-options .order__form-label {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .order__form-options .order__form-text {
+    font-size: 15px;
   }
   .order__form-about {
     width: 455px;
@@ -1964,7 +2117,7 @@ body {
     line-height: 100%;
   }
   .order__form-choose {
-    padding: 24px 35px;
+    padding: 0 35px;
     background: rgba(255, 255, 255, 0.06);
   }
   .order__form-choose:last-child {
@@ -1972,6 +2125,68 @@ body {
   }
   .order__form-auto .order__form-choose {
     margin: 0;
+  }
+  .order__form-auto .order__form-choose:last-child .order__form-label {
+    border-bottom: 0;
+  }
+  .order__form-auto .order__form-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .order__form-total {
+    margin-top: 0;
+  }
+  .order__form-submit {
+    margin-top: 0;
+  }
+  .order__form-manage {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order__renew {
+    margin-top: 60px;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+            box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+    border-radius: 16px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .order__renew p {
+    max-width: 721px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .order__renew a {
+    width: 70px;
+    min-height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-color: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .order__renew a:hover, .order__renew a:focus {
+    background: #fff;
+    color: #759178;
   }
 }
 
@@ -2391,6 +2606,10 @@ body {
   text-decoration: underline;
 }
 
+.articles__link a:hover, .articles__link a:focus {
+  color: #79A982;
+}
+
 @media screen and (min-width: 768px) {
   .articles__item {
     width: 380px;
@@ -2514,6 +2733,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer__soc a:hover, .footer__soc a:focus {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .footer__menu {
@@ -2542,6 +2767,10 @@ body {
 .footer__menu li {
   margin-bottom: 15px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__menu a:hover, .footer__menu a:focus {
+  text-decoration: underline;
 }
 
 .footer__bottom {

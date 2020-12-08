@@ -194,7 +194,23 @@
 				}
 			}
 			&-bottom {
+				margin-top: 30px;
+				padding: 0;
 				background: transparent;
+				box-shadow: none;
+				&__title {
+					padding: 20px 35px;
+					text-align: left;
+					display: block;
+					border-radius: 16px 16px 0px 0px;
+					padding: 20px 35px;
+					background: rgba(#FFFFFF, 0.1);
+					box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+					font-weight: 300;
+					font-size: 22px;
+					line-height: 100%;
+					color: #fff;
+				}
 			}
 			&-wrapper {
 				padding: 80px 129px;
@@ -210,7 +226,40 @@
 			&-img {
 				width: 388px;
 				height: 696px;
-				background: #000;
+				background: url('../../images/order/iphone.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&-text {
+				font-size: 15px;
+			}
+			&-price {
+				color: #fff;
+				font-size: 24px;
+			}
+			&-options {
+				margin-top: 0;
+				border-top: 0;
+				input:checked ~ .order__form-checkbox {
+					border-color: #fff;
+					&::after {
+						background: url('../../images/icons/check.svg');
+					}
+				}
+				.order__form-choose {
+					border-bottom: 0;
+					&:last-child {
+						.order__form-label {
+							border-bottom: 0;
+						}
+					}
+				}
+				.order__form-label {
+					border-bottom: 1px solid rgba(#fff, 0.1);
+				}
+				.order__form-text {
+					font-size: 15px;
+				}
 			}
 			&-about {
 				width: 455px;
@@ -228,14 +277,68 @@
 				line-height: 100%;
 			}
 			&-choose {
-				padding: 24px 35px;
+				padding: 0 35px;
 				background: rgba(#FFFFFF, 0.06);
 				&:last-child {
 					border-radius: 0 0 16px 16px;
 				}
 			}
-			&-auto .order__form-choose {
-				margin: 0;
+			&-auto {
+				.order__form-choose {
+					margin: 0;
+					&:last-child {
+						.order__form-label {
+							border-bottom: 0;
+						}
+					}
+				}
+				.order__form-label {
+					display: flex;
+					width: 100%;
+					padding: 24px 0;
+					border-bottom: 1px solid rgba(#fff, 0.1);
+				}
+			}
+			&-total {
+				margin-top: 0;
+			}
+			&-submit {
+				margin-top: 0;
+			}
+			&-manage {
+				margin-top: 30px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+		}
+		&__renew {
+			margin-top: 60px;
+			padding: 20px 60px;
+			background: rgba(#fff, 0.1);
+			box-shadow: 0px 8px 16px rgba(35, 37, 46, 0.06);
+			border-radius: 16px;
+			justify-content: space-between;
+			p {
+				max-width: 721px;
+				color: #fff;
+				font-size: 24px;
+				line-height: 140%;
+			}
+			a {
+				width: 70px;
+				min-height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+				color: #fff;
+				border-color: #fff;
+				transition: all .3s ease;
+				&:hover,
+				&:focus {
+					background: #fff;
+					color: $green;
+				}
 			}
 		}
 	}

@@ -16,10 +16,13 @@
 	}
 	&__list {
 		margin-top: 40px;
+		display: flex;
+	}
+	&__item {
 		padding: 20px 0 15px;
+		border-radius: 12px;
 		overflow: hidden;
 		background: #FFFFFF;
-		border-radius: 12px;
 	}
 	&__open {
 		margin-top: 6px;
@@ -51,5 +54,8 @@
 @media screen  and(min-width: 1200px) {
 	.reviews {
 		margin-top: 150px;
+		&__item {
+			min-width: 585px;
+		}
 	}
 }

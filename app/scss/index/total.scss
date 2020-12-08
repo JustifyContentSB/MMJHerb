@@ -23,3 +23,11 @@
 		}
 	}
 }
+
+@media screen and(min-width: 1200px) {
+	.total {
+		&__title {
+			color: #fff;
+		}
+	}
+}
