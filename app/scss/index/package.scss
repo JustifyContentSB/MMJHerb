@@ -83,6 +83,7 @@
 
 @media screen and(min-width: 1200px) {
 	.package {
+		margin-top: 150px;
 		background: url('../../images/package/package-bg-dekstop.png');
 		background-size: cover;
 		box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
@@ -90,13 +91,20 @@
 		overflow: hidden;
 		&__inner {
 			background: transparent;
+			padding: 60px 0;
 		}
 		&__title {
 			font-size: 48px;
 		}
 		&__descr {
+			margin-top: 30px;
 			font-size: 20px;
 			line-height: 140%;
+			span {
+				margin-top: 10px;
+				font-size: 24px;
+				font-weight: 700;
+			}
 		}
 		&__link {
 			margin-top: 40px;

@@ -1,5 +1,5 @@
 .faq {
-	max-width: 790px;
+	max-width: 820px;
 	margin: 0 auto;
 	margin-top: 77px;
 	&__list {
@@ -12,7 +12,7 @@
 		line-height: 130%;
 		color: #556658;
 		position: relative;
-		border-bottom: 2px solid #E0E8E3;
+		border-bottom: 1px solid #E0E8E3;
 		span {
 			display: block;
 			padding: 25px 0;
@@ -56,11 +56,13 @@
 		}
 		&__open {
 			span {
+				padding-left: 25px;
 				font-size: 20px;
 				line-height: 130%;
 			}
 		}
 		&__text {
+			margin-bottom: 30px;
 			background: #F9FBF9;
 			border-radius: 20px;
 			padding: 25px;

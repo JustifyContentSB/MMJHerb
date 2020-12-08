@@ -21,6 +21,16 @@
 				margin-right: 0;
 			}
 		}
+		&-auto {
+			position: relative;
+			padding-right: 10px;
+			&::after {
+				position: absolute;
+				right: 0;
+				content: '+';
+				color: #E0E8E3;
+			}
+		}
 	}
 }
 

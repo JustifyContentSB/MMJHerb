@@ -4,6 +4,7 @@
 	border-radius: 20px;
 	&__inner {
 		padding: 40px 0 35px;
+		color: #fff;
 	}
 	&__title {
 		color: #fff;
@@ -17,6 +18,7 @@
 	&__list {
 		margin-top: 40px;
 		display: flex;
+		justify-content: center;
 	}
 	&__item {
 		padding: 20px 0 15px;
@@ -36,6 +38,14 @@
 		color: rgba(#fff, 0.5);
 		text-decoration: underline;
 	}
+	&__descr {
+		display: none;
+		margin-top: 30px;
+		text-align: center;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 120%;
+	}
 }
 
 @media screen  and(min-width: 768px) {
@@ -54,8 +64,25 @@
 @media screen  and(min-width: 1200px) {
 	.reviews {
 		margin-top: 150px;
+		min-height: 825px;
+		background: url('../../images/reviews/reviews-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 60px;
+		&__inner {
+			padding: 100px 0;
+		}
+		&__descr {
+			display: block;
+		}
+		&__list {
+			margin-top: 65px;
+		}
 		&__item {
 			min-width: 585px;
+		}
+		&__leave {
+			font-size: 18px;
 		}
 	}
 }

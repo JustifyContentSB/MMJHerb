@@ -26,4 +26,18 @@
 			height: 22px;
 		}
 	}
+	&-total {
+		width: 30px;
+		height: 30px;
+		fill: #759178;
+	}
+}
+
+@media screen and(min-width: 1200px) {
+	.svg {
+		&-total {
+			width: 36px;
+			height: 36px;
+		}
+	}
 }

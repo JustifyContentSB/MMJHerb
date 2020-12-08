@@ -150,11 +150,12 @@
 
 @media screen and(min-width: 1200px) {
 	.advantages {
-		margin-top: 150px;
+		margin-top: 110px;
 		&__list {
+			padding: 20px 0;
 			width: 995px;
 			margin: 0 auto;
-			margin-top: 80px;
+			margin-top: 95px;
 			font-size: 18px;
 			line-height: 160%;
 			background: url(../../images/advantages/tabl.png);
@@ -168,22 +169,46 @@
 				&::after {
 					display: none;
 				}
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(6) {
+					.advantages__item {
+						padding: 40px;
+						padding-top: 150px;
+						&::before {
+							top: 48px;
+						}
+					}
+				}
 			}
 		}
 		&__item {
+			padding-top: 117px;
+			padding-bottom: 45px;
 			&::before {
 				width: 64px;
 				height: 64px;
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
+			&--phone {
+				br {
+					display: none;
+				}
+			}
+			&--license {
+				br {
+					display: none;
+				}
+			}
 		}
 		&__proposal {
-			margin-top: 60px;
+			margin-top: 68px;
 			font-weight: 300;
 			font-size: 30px;
 		}
 		&__link {
+			margin-top: 50px;
 			width: 175px;
 			font-weight: 600;
 		}

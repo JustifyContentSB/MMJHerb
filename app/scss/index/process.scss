@@ -90,7 +90,14 @@
 @media screen and(min-width: 1200px) {
 	.process {
 		margin-top: 150px;
+		&__descr {
+			margin-top: 30px;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 120%;
+		}
 		&__list {
+			margin-top: 95px;
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
@@ -98,6 +105,12 @@
 		}
 		&__item {
 			width: 370px;
+			padding: 45px 40px;
+			&-info {
+				margin-top: 30px;
+				font-size: 16px;
+				line-height: 160%;
+			}
 			&-step {
 				padding: 12px 15px;
 				font-size: 16px;
@@ -111,6 +124,7 @@
 			&-title {
 				margin-top: 10px;
 				font-size: 18px;
+				line-height: 150%;
 				span {
 					font-size: 24px;
 					display: block;
@@ -120,6 +134,13 @@
 			&-header--pc {
 				.process__item-step {
 					margin: 0;
+				}
+			}
+			&-link {
+				margin-top: 35px;
+				font-size: 15px;
+				a {
+					padding: 18px 40px;
 				}
 			}
 		}

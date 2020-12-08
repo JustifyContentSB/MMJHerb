@@ -15,7 +15,8 @@
 			<div class="container">
 				<div class="header__inner">
 					<div class="header__top">
-						<a class="header__logo" href="/"><img src="images/icons/logo.png" alt="logo" width="45" height="60"></a>
+						<a class="header__logo" href="/">
+						</a>
 						<a class="header__toggle" href="#"><span></span></a>
 						<div class="header__menu">
 							<!-- <div class="header__menu-top">
@@ -23,6 +24,7 @@
 								<a class="header__menu-order" href="#">Order now</a>
 								<a class="header__toggle header__menu-toggle" href="#"><span></span></a>
 							</div> -->
+							<a class="header__menu-order" href="#">Order now</a>
 							<div class="header__menu-bottom">
 								<nav class="header__nav">
 									<ul>
@@ -66,7 +68,6 @@
 								</ul>
 							</div>
 						</div>
-						<a class="header__menu-order" href="#">Order now</a>
 					</div>
 
 					<div class="header__bottom">
@@ -76,11 +77,11 @@
 							<div class="header__seller">
 								<div class="seller__rating header__rating">
 									<div class="header__rating-img">
-										<img src="images/seller/trustpilot.png" alt="trustpilot" width="130" height="31">
+										<img src="images/seller/trustpilot.png" alt="trustpilot" width="145" height="35">
 									</div>
 									<div class="seller__rating-inner">
 										<p>8.7 out of 10</p>
-										<img src="images/seller/rating.png" alt="rating" width="117" height="21">
+										<img src="images/seller/rating.png" alt="rating" width="130" height="24">
 									</div>
 								</div>
 								<p class="header__bestseller">Best seller reviews <span>from 2016</span></p>
@@ -186,6 +187,7 @@
 				<div class="container">
 					<div class="reviews__inner">
 						<h2 class="section-title reviews__title">Our reviews</h2>
+						<p class="reviews__descr">Check out the latest reviews from Trustpilot.</p>
 						<div>
 							<div class="reviews__list">
 								<div class="reviews__item">
@@ -211,7 +213,6 @@
 								</div> -->
 							</div>
 						</div>
-						<div class="swiper-pagination"></div>
 						<div class="reviews__leave"><a href="#">Leave Review on Trustpilot</a></div>
 					</div>
 				</div>
@@ -278,80 +279,97 @@
 				<div class="container">
 					<div class="order__inner">
 						<h2 class="section-title">Get your <br> recommendation now!</h2>
-						<div class="order__form-wrapper">
-							<div class="order__form-info">
-								<div class="order__form-img"></div>
-								<form class="order__form">
-									<div class="order__form-top">
-										<div class="order__form-top__inner">
-											<p class="order__form-about">Doctor's Recommendation in digital format</p>
-											<div class="order__form-auto">
-												<p class="order__form-type">Included</p>
+						<div class="order__box">
+							<div class="order__form-wrapper">
+								<div class="order__form-info">
+									<div class="order__form-img"></div>
+									<form class="order__form">
+										<div class="order__form-top">
+											<div class="order__form-top__inner">
+												<p class="order__form-about">Doctor's Recommendation in digital format</p>
+												<div class="order__form-auto">
+													<p class="order__form-type">Included</p>
+													<div class="order__form-choose">
+														<label class="order__form-label">
+															<input disabled checked type="checkbox" name="order-auto">
+															<span class="order__form-checkbox"></span>
+															<p class="order__form-text">Within 10 minutes</p>
+														</label>
+													</div>
+													<div class="order__form-choose">
+														<label class="order__form-label">
+															<input disabled checked type="checkbox" name="order-auto">
+															<span class="order__form-checkbox"></span>
+															<p class="order__form-text">Possess up to 8 oz.</p>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order__form-bottom">
+											<span class="order__form-bottom__title">Options:</span>
+											<div class="order__form-options">
 												<div class="order__form-choose">
 													<label class="order__form-label">
-														<input disabled checked type="checkbox" name="order-auto">
+														<input type="checkbox" name="order-options">
 														<span class="order__form-checkbox"></span>
-														<p class="order__form-text">Within 10 minutes</p>
+														<p class="order__form-text">Official MMJ Doctor's Recommendation in paper format</p>
+														<span class="order__form-price">+$10</span>
 													</label>
 												</div>
 												<div class="order__form-choose">
 													<label class="order__form-label">
-														<input disabled checked type="checkbox" name="order-auto">
+														<input type="checkbox" name="order-options">
 														<span class="order__form-checkbox"></span>
-														<p class="order__form-text">Possess up to 8 oz.</p>
+														<p class="order__form-text">Plastic MMJ-ID Card with Personal Photo</p>
+														<span class="order__form-price">+$15</span>
+													</label>
+												</div>
+												<div class="order__form-choose">
+													<label class="order__form-label">
+														<input type="checkbox" name="order-options">
+														<span class="order__form-checkbox"></span>
+														<p class="order__form-text">Permit to grow up to 99 plant</p>
+														<span class="order__form-price">+$20</span>
 													</label>
 												</div>
 											</div>
+											<div class="order__form-manage">
+												<div class="order__form-total total">
+													<span class="total__title">Total:</span>
+													<ul class="total__list">
+														<li class="total__list-auto">
+															<svg class="svg svg-total">
+																<use xlink:href="images/order/total-sprite.svg#totalAuto"></use>
+															</svg>
+														</li>
+														<li class="total__list-briefing">
+															<svg class="svg svg-total">
+																<use xlink:href="images/order/total-sprite.svg#totalBriefing"></use>
+															</svg>
+														</li>
+														<li class="total__list-card">
+															<svg class="svg svg-total">
+																<use xlink:href="images/order/total-sprite.svg#totalCard"></use>
+															</svg>
+														</li>
+														<li class="total__list-pot">
+															<svg class="svg svg-total">
+																<use xlink:href="images/order/total-sprite.svg#totalPot"></use>
+															</svg>
+														</li>
+													</ul>
+												</div>
+												<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
+											</div>
 										</div>
-									</div>
-									<div class="order__form-bottom">
-										<span class="order__form-bottom__title">Options:</span>
-										<div class="order__form-options">
-											<div class="order__form-choose">
-												<label class="order__form-label">
-													<input type="checkbox" name="order-options">
-													<span class="order__form-checkbox"></span>
-													<p class="order__form-text">Official MMJ Doctor's Recommendation in paper format</p>
-													<span class="order__form-price">+$10</span>
-												</label>
-											</div>
-											<div class="order__form-choose">
-												<label class="order__form-label">
-													<input type="checkbox" name="order-options">
-													<span class="order__form-checkbox"></span>
-													<p class="order__form-text">Plastic MMJ-ID Card with Personal Photo</p>
-													<span class="order__form-price">+$15</span>
-												</label>
-											</div>
-											<div class="order__form-choose">
-												<label class="order__form-label">
-													<input type="checkbox" name="order-options">
-													<span class="order__form-checkbox"></span>
-													<p class="order__form-text">Permit to grow up to 99 plant</p>
-													<span class="order__form-price">+$20</span>
-												</label>
-											</div>
-										</div>
-										<div class="order__form-manage">
-											<div class="order__form-total total">
-												<span class="total__title">Total:</span>
-												<ul class="total__list">
-													<li><img src="images/order/total-auto.svg" alt="total-auto" width="30" height="30"></li>
-													<li><img src="images/order/plus.svg" alt="plus" width="7" height="7"></li>
-													<li><img src="images/order/total-briefing.svg" alt="total-brifieng" width="30" height="30"></li>
-													<li><img src="images/order/total-card.svg" alt="total-card" width="30" height="30"></li>
-													<li><img src="images/order/total-pot.svg" alt="total-pot" width="30" height="30"></li>
-												</ul>
-											</div>
-											<div class="order__form-submit"><button>Order now from <span class="order__form-cost">$29</span></button></div>
-										</div>
-									</div>
-								</form>
-							</div>
-							
-							<div class="order__renew">
-								<p>Or renew your recommendation issued by any clinic, from $25 only</p>
-								<a href="#">Go</a>
+									</form>
+								</div>
+								
+								<div class="order__renew">
+									<p>Or renew your recommendation issued by any clinic, from $25 only</p>
+									<a href="#">Go</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -383,8 +401,10 @@
 						<h2 class="section-title">Useful videos</h2>
 						<p class="videos__descr">How to Get Platinum Package <br> for Growers</p>
 						<div class="videos__list">
-							<img src="images/instruction/instruction-video.png" alt="video" width="290" height="220">
+							<img class="videos__tel" src="images/instruction/instruction-video.png" alt="video" width="290" height="220">
+							<img class="videos__dekstop" src="images/instruction/instruction-video-big.png" alt="video" width="788" height="542">
 						</div>
+						<div class="videos__more"><a href="#">More videos on our Youtube channel</a></div>
 					</div>
 				</div>
 			</section>
