@@ -14,58 +14,59 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
-					<div class="header__top">
-						<a class="header__logo" href="/">
-						</a>
-						<a class="header__toggle" href="#"><span></span></a>
-						<div class="header__menu">
-							<!-- <div class="header__menu-top">
-								<a class="header__menu-logo" href="/"><img src="images/icons/logo-mmj.png" alt="logo" width="110" height="30"></a>
-								<a class="header__menu-order" href="#">Order now</a>
-								<a class="header__toggle header__menu-toggle" href="#"><span></span></a>
-							</div> -->
-							<a class="header__menu-order" href="#">Order now</a>
-							<div class="header__menu-bottom">
-								<nav class="header__nav">
-									<ul>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">Pricing</a></li>
-										<li><a href="#">Map</a></li>
-										<li><a href="#">Blog</a></li>
-										<li><a href="#">For Affiliates</a></li>
-										<li><a href="#">Contacts</a></li>
-									</ul>	
-								</nav>
-								<ul class="header__menu-soc">
-									<li>
-										<a href="#"> 
-											<svg class="svg svg-facebook">
-												<use xlink:href="images/icons/sprite.svg#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#"> 
-											<svg class="svg svg-twitter">
-												<use xlink:href="images/icons/sprite.svg#twitter"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#"> 
-											<svg class="svg svg-youtube">
-												<use xlink:href="images/icons/sprite.svg#youtube"></use>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#"> 
-											<svg class="svg svg-insta">
-												<use xlink:href="images/icons/sprite.svg#insta"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
+					<div class="header__top-wrapper">
+						<div class="header__top">
+							<a class="header__logo" href="/">
+							</a>
+							<a class="header__toggle header__toggle-one" href="#"><span></span></a>
+							<div class="header__menu">
+								<div class="header__menu-top">
+									<a class="header__menu-logo" href="/"><img src="images/icons/logo-mmj.png" alt="logo" width="110" height="30"></a>
+									<a class="header__menu-order" href="#">Order now</a>
+									<a class="header__toggle header__menu-toggle" href="#"><span></span></a>
+								</div>
+								<div class="header__menu-bottom">
+									<nav class="header__nav">
+										<ul>
+											<li><a href="#">Home</a></li>
+											<li><a href="#">Pricing</a></li>
+											<li><a href="#">Map</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">For Affiliates</a></li>
+											<li><a href="#">Contacts</a></li>
+										</ul>	
+									</nav>
+									<ul class="header__menu-soc">
+										<li>
+											<a href="#"> 
+												<svg class="svg svg-facebook">
+													<use xlink:href="images/icons/sprite.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#"> 
+												<svg class="svg svg-twitter">
+													<use xlink:href="images/icons/sprite.svg#twitter"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#"> 
+												<svg class="svg svg-youtube">
+													<use xlink:href="images/icons/sprite.svg#youtube"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#"> 
+												<svg class="svg svg-insta">
+													<use xlink:href="images/icons/sprite.svg#insta"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -86,7 +87,7 @@
 								</div>
 								<p class="header__bestseller">Best seller reviews <span>from 2016</span></p>
 							</div>
-							<a class="header__content-link" href="#">Order now</a>
+							<a class="header__content-link" href="#" data-modal="#state">Order now</a>
 						</div>
 					</div>
 				</div>
@@ -178,7 +179,7 @@
 							<li><p class="advantages__item advantages__item--license">Compliant with <br> HIPAA and ASA Standards</p></li>
 						</ul>
 						<p class="advantages__proposal">Three easy steps to get card now</p>
-						<a class="advantages__link" href="#">Order now</a>
+						<a class="advantages__link" href="#" data-modal="#state">Order now</a>
 					</div>
 				</div>
 			</section>
@@ -233,7 +234,7 @@
 									<p>You don't need to wait for a doctor for long or arrange an appointment any more!</p> 
 									<p>Simply enter our website and fill the application form answering a few questions there.</p>
 								</div>
-								<div class="process__item-link"><a href="#">Choose the best package</a></div>
+								<div class="process__item-link"><a href="#" data-modal="#state">Choose the best package</a></div>
 							</li>
 
 							<li class="process__item">
@@ -447,7 +448,7 @@
 				<div class="get__inner">
 					<h2 class="section-title get__title">Get your card now!</h2>
 					<p class="get__text">with our 420 doctors recommendations</p>
-					<a class="get__link" href="#">Order now</a>
+					<a class="get__link" href="#" data-modal="#state">Order now</a>
 				</div>
 			</section>
 
@@ -575,9 +576,9 @@
 		</footer>
 
 		<div class="modal-wrapper">
-			<div class="modal">
+			<div class="modal" id="state">
 				<div class="modal__content state">
-					<a class="modal__close" href="#"></a>
+					<a class="modal__close" href="#" data-modal="#state"></a>
 					<h3 class="state__title">Choose your state</h3>
 					<div class="state__choose">
 						<input type="text" placeholder="California">
