@@ -28,17 +28,17 @@
 			left: 0;
 		}
 		&--tourist::before {
-			background: url('../../images/features/luggage.svg');
+			background: url('../images/features/luggage.svg');
 			background-repeat: no-repeat;
 		}
 		&--quality::before {
-			background: url('../../images/features/autumn.svg');
+			background: url('../images/features/autumn.svg');
 			background-repeat: no-repeat;
 		}
 		&--cards::before {
 			height: 20px;
 			top: 11px;
-			background: url('../../images/features/student.svg');
+			background: url('../images/features/student.svg');
 			background-repeat: no-repeat;
 		}
 	}

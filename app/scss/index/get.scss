@@ -17,7 +17,7 @@
 			right: 17px;
 			width: 156px;
 			height: 268px;
-			background: url('../../images/get/doctor.png');
+			background: url('../images/get/doctor.png');
 		}
 	}
 	&__title {
@@ -52,7 +52,7 @@
 		margin: 0 auto;
 		margin-top: 150px;
 		padding: 60px;
-		background: url('../../images/get/get-bg.png');
+		background: url('../images/get/get-bg.png');
 		background-size: cover;
 		position: relative;
 		&::after {
@@ -60,7 +60,7 @@
 			position: absolute;
 			width: 317px;
 			height: 421px;
-			background: url('../../images/get/doctor-dekstop.png');
+			background: url('../images/get/doctor-dekstop.png');
 			background-repeat: no-repeat;
 			background-size: contain;
 			right: 63px;

@@ -31,17 +31,17 @@
 				top: 0;
 			}
 			&--pc::before {
-				background: url('../../images/process/pc.svg');
+				background: url('../images/process/pc.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
 			&--mail::before {
-				background: url('../../images/process/mail.svg');
+				background: url('../images/process/mail.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
 			&--marijuana::before {
-				background: url('../../images/process/marijuana.svg');
+				background: url('../images/process/marijuana.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
@@ -115,8 +115,8 @@
 				padding: 12px 15px;
 				font-size: 16px;
 				position: absolute;
-				top: -45px;
-				right: 0;
+				top: -60px;
+				right: -12px;
 				background: #FFFFFF;
 				box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
 				border-radius: 12px;

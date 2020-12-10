@@ -17,7 +17,7 @@
 		display: block;
 		width: 45px;
 		height: 60px;
-		background: url('../../images/icons/logo.png');
+		background: url('../images/icons/logo.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
@@ -168,7 +168,7 @@
 			right: -15px;
 			width: 178px;
 			height: 310px;
-			background: url('../../images/header/girl-tel.png');
+			background: url('../images/header/girl-tel.png');
 		}
 	}
 	&__title {
@@ -265,7 +265,7 @@
 					&__logo {
 						width: 130px;
 						height: 30px;
-						background: url('../../images/icons/logo-green.png');
+						background: url('../images/icons/logo-green.png');
 						background-repeat: no-repeat;
 					}
 					&__menu {
@@ -307,7 +307,7 @@
 @media screen and(min-width: 1200px) {
 	.header {
 		border-radius: 0px 0px 50px 50px;
-		background: url('../../images/header/line-bg.png'), linear-gradient(103.2deg, #AEC4B1 0%, #749078 100%);
+		background: url('../images/header/line-bg.png'), linear-gradient(103.2deg, #AEC4B1 0%, #749078 100%);
 		background-size: cover;
 		background-position: center;
 		&__inner {
@@ -319,7 +319,7 @@
 		&__logo {
 			width: 72px;
 			height: 96px;
-			background: url('../../images/icons/logo-dekstop.png');
+			background: url('../images/icons/logo-dekstop.png');
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
@@ -404,7 +404,7 @@
 			max-width: 100%;
 			margin-top: 84px;
 			&::after {
-				background: url('../../images/header/girl-dekstop.png');
+				background: url('../images/header/girl-dekstop.png');
 				width: 635px;
 				height: 636px;
 				top: -104px;
@@ -461,7 +461,7 @@
 					position: absolute;
 					width: 94px;
 					height: 101px;
-					background: url('../../images/header/papers.png');
+					background: url('../images/header/papers.png');
 					background-repeat: no-repeat;
 					background-size: contain;
 					right: -7px;

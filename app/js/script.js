@@ -78,7 +78,38 @@ $(function() {
 		}
 	});
 
-	//SWIPER
+	//SLICK
+	$('.reviews__list').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  dots: true,
+	  infinite: false,
+	  responsive: [
+	  	{
+	  		breakpoint: 1200,
+	  		settings: {
+	  			arrows: false
+	  		}
+	  	}
+	  ]
+	});
+
+	$('.videos__list').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  dots: true,
+	  infinite: false,
+	  responsive: [
+	  	{
+	  		breakpoint: 1200,
+	  		settings: {
+	  			arrows: false
+	  		}
+	  	}
+	  ]
+	});
 
 });
 

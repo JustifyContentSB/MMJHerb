@@ -5,6 +5,7 @@
 	&__inner {
 		padding: 40px 0 35px;
 		color: #fff;
+		position: relative;
 	}
 	&__title {
 		color: #fff;
@@ -12,13 +13,69 @@
 	&__image {
 		text-align: center;
 		&-dekstop {
-			display: none;
+			display: none !important;
 		}
 	}
 	&__list {
+		width: 290px;
+		margin: 0 auto;
 		margin-top: 40px;
-		display: flex;
-		justify-content: center;
+		.slick {
+				&-arrow {
+					position: absolute;
+					top: 44%;
+					transform: translateY(-50%);
+					font-size: 0;
+					width: 14px;
+					height: 30px;
+					outline: none; 
+				}
+				&-prev {
+					left: -50px;
+					background: url('../../images/icons/slide-prev.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				&-next {
+					right: -50px;
+					background: url('../../images/icons/slide-next.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				&-dots {
+					margin-top: 15px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					li {
+						list-style: none;
+						margin-right: 6px;
+						&:last-child {
+							margin-right: 0;
+						}
+						&.slick-active button {
+							width: 8px;
+							height: 8px;
+							background: rgba(#fff, 0.6);
+						}
+					}
+					button {
+						font-size: 0;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background: rgba(#fff, 0.4);
+						outline: none;
+						&:hover,
+						&:focus {
+							background: #fff;
+						}
+					}
+				}
+				&-disabled {
+					opacity: 0.4;
+				}
+			}
 	}
 	&__item {
 		padding: 20px 0 15px;
@@ -52,10 +109,12 @@
 	.reviews {
 		&__image {
 			&-tel {
-				display: none;
+				display: none !important;
 			}
 			&-dekstop {
-				display: inline;
+				display: inline !important;
+				max-width: 100%;
+				height: auto;
 			} 
 		}
 	}
@@ -65,20 +124,40 @@
 	.reviews {
 		margin-top: 150px;
 		min-height: 825px;
-		background: url('../../images/header/line-bg.png'), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);
+		background: url('../images/header/line-bg.png'), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-radius: 60px;
 		&__inner {
-			padding: 100px 0;
+			padding-top: 100px;
 		}
 		&__descr {
 			display: block;
 		}
 		&__list {
+			margin: 0 auto;
 			margin-top: 65px;
+			width: 585px;
+			.slick {
+				&-dots {
+					margin-top: 27px;
+				}
+			}
+		}
+		&__item {
+			.slick-slide {
+				width: 30%;
+				img {
+					max-width: 350px;
+				}
+			}
+		}
+		&__open {
+			margin-top: 25px;
+			font-size: 16px;
 		}
 		&__leave {
+			margin-top: 21px;
 			font-size: 18px;
 		}
 	}

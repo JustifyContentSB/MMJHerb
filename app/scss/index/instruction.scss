@@ -49,7 +49,7 @@
 				transform: translateY(-50%);
 				width: 15px;   
 				height: 18px;
-				background: url('../../images/icons/play.svg');
+				background: url('../images/icons/play.svg');
 				/*background-repeat: no-repeat;*/
 			}
 			&:hover,
@@ -57,7 +57,7 @@
 				background: $green;
 				color: #fff;
 				&::after {
-					background: url('../../images/icons/play-hover.svg');
+					background: url('../images/icons/play-hover.svg');
 				}
 			}
 		}

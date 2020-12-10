@@ -3,7 +3,7 @@
 	&__inner {
 		padding: 50px 15px;
 		border-radius: 20px;
-		background: url('../../images/package/package-bg-tel.png'), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);;
+		background: url('../images/package/package-bg-tel.png'), linear-gradient(102.25deg, #AEC4B1 0%, #749078 100%);;
 		color: #fff;
 		text-align: center;
 	}
@@ -84,7 +84,7 @@
 @media screen and(min-width: 1200px) {
 	.package {
 		margin-top: 150px;
-		background: url('../../images/package/package-bg-dekstop.png');
+		background: url('../images/package/package-bg-dekstop.png');
 		background-size: cover;
 		box-shadow: 0px 4px 8px rgba(35, 37, 46, 0.06);
 		border-radius: 60px;
