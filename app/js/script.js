@@ -111,5 +111,85 @@ $(function() {
 	  ]
 	});
 
+	//ORDER
+	let inpBriefing = document.querySelector('.order__input-briefing');
+	let inpCard = document.querySelector('.order__input-card');
+	let inpPot = document.querySelector('.order__input-pot');
+	let svgBriefing = document.querySelector('.total__list-briefing svg');
+	let svgCard = document.querySelector('.total__list-card svg');
+	let svgPot = document.querySelector('.total__list-pot svg');
+	let price = document.querySelector('.order__form-pay');
+	let orderImg = document.querySelector('.order__form-img');
+
+	let orderInputs = document.querySelectorAll('.order__input');
+	for(let i = 0; i < orderInputs.length; i++) {
+		orderInputs[i].addEventListener('change', function(e) {
+			if((inpBriefing.checked == true) && (inpCard.checked == false) && (inpPot.checked == false)) {
+			price.innerHTML = Number(18);
+			svgBriefing.classList.add('svg-checked');
+			svgPot.classList.remove('svg-checked');
+			svgCard.classList.remove('svg-checked');
+			orderImg.classList.remove('order__form-img-card');
+			orderImg.classList.remove('order__form-img-pot');
+			orderImg.classList.add('order__form-img-briefing');
+			} else if((inpBriefing.checked == true) && (inpCard.checked == true) && (inpPot.checked == false)) {
+				price.innerHTML = Number(27);
+				svgBriefing.classList.add('svg-checked');
+				svgPot.classList.remove('svg-checked');
+				svgCard.classList.add('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-pot');
+				orderImg.classList.add('order__form-img-card');
+				
+			} else if((inpBriefing.checked == true) && (inpCard.checked == true) && (inpPot.checked == true)) {
+				price.innerHTML = Number(36);
+				svgBriefing.classList.add('svg-checked');
+				svgPot.classList.add('svg-checked');
+				svgCard.classList.add('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-card');
+				orderImg.classList.add('order__form-img-pot');
+			} else if((inpBriefing.checked == false) && (inpCard.checked == true) && (inpPot.checked == true)) {
+				price.innerHTML = Number(36);
+				inpBriefing.checked = true;
+				svgBriefing.classList.add('svg-checked');
+				svgPot.classList.add('svg-checked');
+				svgCard.classList.add('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-card');
+				orderImg.classList.add('order__form-img-pot');
+			} else if((inpBriefing.checked == false) && (inpCard.checked == false) && (inpPot.checked == true)) {
+				price.innerHTML = Number(36);
+				inpBriefing.checked = true;
+				inpCard.checked = true;
+				svgBriefing.classList.add('svg-checked');
+				svgPot.classList.add('svg-checked');
+				svgCard.classList.add('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-card');
+				orderImg.classList.add('order__form-img-pot');
+			} else if((inpBriefing.checked == false) && (inpCard.checked == true) && (inpPot.checked == false)) {
+				price.innerHTML = Number(27);
+				inpBriefing.checked = true;
+				svgBriefing.classList.add('svg-checked');
+				svgPot.classList.remove('svg-checked');
+				svgCard.classList.add('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-pot');
+				orderImg.classList.add('order__form-img-card');
+			} else {
+				price.innerHTML = Number(9);
+				inpBriefing.checked = false;
+				inpCard.checked = false;
+				svgBriefing.classList.remove('svg-checked');
+				svgPot.classList.remove('svg-checked');
+				svgCard.classList.remove('svg-checked');
+				orderImg.classList.remove('order__form-img-briefing');
+				orderImg.classList.remove('order__form-img-pot');
+				orderImg.classList.remove('order__form-img-card');
+			}
+		});
+	}
+
 });
 
